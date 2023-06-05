@@ -52,5 +52,8 @@ ui.pushButton.clicked.connect(section_to_points)
 ui.pushButton_2.clicked.connect(points_to_count)
 ui.pushButton_4.clicked.connect(set_correction)
 ui.pushButton_3.clicked.connect(get_section_status)
+ui.label.setText(f'{ui.label.text()[:-5]}\t{ui.label.text()[-5:]}')
+ui.label_4.setText(f'{ui.label_4.text()[:-5]}\t{ui.label_4.text()[-5:]}')
+ui.label_5.setText(f'{ui.label_5.text()[:-5]}\t{ui.label_5.text()[-5:]}')
 
 sys.exit(app.exec())
